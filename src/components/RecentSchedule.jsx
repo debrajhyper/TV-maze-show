@@ -1,14 +1,7 @@
-import React, { useEffect, useState } from 'react';
-// import { NavLink } from 'react-router-dom';
-
-
+import { useEffect, useState } from 'react';
 import { TaggedContentCard } from 'react-ui-cards';
-
-
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
-
 
 const RecentSchedule = () => {
   const [data, setData] = useState([]);
@@ -27,12 +20,9 @@ const RecentSchedule = () => {
 
   return (
     <div>
-
       {/* main card start */}
       <div >
-
         <div className='m-3'>
-
           <Carousel
             additionalTransfrom={0}
             arrows
@@ -87,11 +77,9 @@ const RecentSchedule = () => {
             swipeable
           >
             {
-              data.map((curElem) => {
+              data.map((curElem, index) => {
                 return (
-
-
-                  <div className='m-1'>
+                  <div key={index} className='m-1'>
                     <TaggedContentCard
                       href={`/show/${curElem.show.id}`}
                       thumbnail={curElem.show.image != null ?
@@ -101,24 +89,15 @@ const RecentSchedule = () => {
                       title={curElem.show.name}
                       description=''
                       tags={[
-
                       ]}
                     > </TaggedContentCard>
                   </div>
                 );
               })
             }
-
-          </Carousel>;
-
-
-
-
+          </Carousel>
         </div>
       </div>
-
-
-
       {/* main card end */}
     </div>
   )

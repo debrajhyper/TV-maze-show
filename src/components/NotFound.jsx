@@ -1,14 +1,12 @@
-import React from 'react'
-
 const NotFound = () => {
   return (
     <div>
       {/* main start */}
-      <div className='bg-dark vh-100'>
-        <div className='row d-flex align-items-center justify-content-center '>
+      <div className='bg-transparent'>
+        <div className='row d-flex align-items-center justify-content-center bg-transparent'>
           <div className='col-xxl-6 col-md-12 pt-5'>
-            <div className="bg-dark  card p-5 m-5" >
-              <div className="card-body text-center text-white ">
+            <div className="bg-dark card p-5 m-5" >
+              <div className="card-body text-center text-white">
                 <h1 className="card-title ">404</h1><br />
                 <h6 className="card-subtitle mb-2 text-muted">Error - Page Not Found...</h6>
                 <hr />

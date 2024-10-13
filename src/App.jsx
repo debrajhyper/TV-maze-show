@@ -1,22 +1,23 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import NotFound from "./component/NotFound"
-import RecentSchedule from "./component/RecentSchedule";
-import Show from "./component/Show";
-import Home from "./component/Home";
+import './App.css'
+import NotFound from "./components/NotFound"
+import RecentSchedule from "./components/RecentSchedule";
+import Show from "./components/Show";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <>
+    <div className="overflow-hidden">
       <Router>
         <Routes >
-          <Route path="*" element={<NotFound />} />
           <Route path="/" element={<Home />} />
           <Route path="/recentschedule/" element={<RecentSchedule />} />
           <Route path="/show/:id" element={<Show />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
-    </>
-  );
+    </div>
+  )
 }
 
-export default App;
+export default App

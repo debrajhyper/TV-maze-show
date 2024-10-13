@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom'
 import Navbar from './Navbar';
 
@@ -35,8 +35,8 @@ const Show = () => {
       <Navbar />
       {/* navbar end */}
       {/* main card start */}
-      <div className="card mb-3 p-5 fs-5 bg-dark" >
-        <div className="row g-0 bg-dark">
+      <div className="card mb-3 p-5 fs-5 bg-transparent vh-100" >
+        <div className="row g-0 bg-transparent vh-100">
           <div className="col-md-4 col-xxl-4 col-sm-12">
             <img src={imageName} className="img-fluid rounded-start h-100" alt="tvshow" />
           </div>

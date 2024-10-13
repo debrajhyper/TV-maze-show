@@ -1,12 +1,10 @@
-import React from 'react'
-
 const Navbar = () => {
   return (
     <div>
       {/* navbar start */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/#">UK Show</a>
+          <a className="navbar-brand" href="/">UK Show</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -16,13 +14,13 @@ const Navbar = () => {
                 <a className="nav-link active" aria-current="page" href="/">TV Show</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/not">Movies</a>
+                <a className="nav-link" href="/not-found">Movies</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/not">Sports</a>
+                <a className="nav-link" href="/not-found">Sports</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/not">Premium</a>
+                <a className="nav-link" href="/not-found">Premium</a>
               </li>
             </ul>
           </div>
