@@ -35,10 +35,10 @@ const Show = () => {
       <Navbar />
       {/* navbar end */}
       {/* main card start */}
-      <div className="card mb-3 p-5 fs-5 bg-transparent vh-100" >
-        <div className="row g-0 bg-transparent vh-100">
-          <div className="col-md-4 col-xxl-4 col-sm-12">
-            <img src={imageName} className="img-fluid rounded-start h-100" alt="tvshow" />
+      <div className="card mb-3 p-5 fs-5 bg-transparent" >
+        <div className="row g-0 bg-transparent">
+          <div className="col-md-4 col-xl-4 col-sm-12">
+            <img src={imageName} className="img-fluid rounded-start h-75 object-cover" alt="tvshow" />
           </div>
           <div className="col-xxl-6  col-md-6 col-sm-12 ps-5">
             <div className="card-body text-white">
