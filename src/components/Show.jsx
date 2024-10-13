@@ -13,7 +13,6 @@ const Show = () => {
 
   const [nextEpisode, setNextEpisode] = useState();
   const getTvshow = async () => {
-
     const res = await fetch(`https://api.tvmaze.com/shows/${idName}`);
     const actualData = await res.json();
     setData(actualData);
